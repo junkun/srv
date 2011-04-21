@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="" >
+    <file>images/file-exit.png</file>
+    <file>images/file-new.png</file>
+    <file>images/file-open.png</file>
+    <file>images/file-save-as.png</file>
+    <file>images/file-save.png</file>
+    <file>images/gnu-opensource-logo.png</file>
+    <file>images/pause-icon.png</file>
+    <file>images/play-icon.png</file>
+    <file>images/record-icon.png</file>
+    <file>images/stop-icon.png</file>
+    <file>images/audio-volume-high.png</file>
+  </qresource>
+</RCC>
