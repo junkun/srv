@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'widget.ui'
 **
-** Created: Thu Apr 21 17:13:40 2011
+** Created: Thu Apr 21 18:52:17 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -124,7 +124,6 @@ public:
         QObject::connect(close, SIGNAL(clicked()), Widget, SLOT(close()));
         QObject::connect(recorder, SIGNAL(clicked()), Widget, SLOT(openRecord()));
         QObject::connect(pushButton, SIGNAL(clicked()), Widget, SLOT(conectar()));
-        QObject::connect(identifyButton, SIGNAL(clicked()), Widget, SLOT(openIdentifier()));
 
         QMetaObject::connectSlotsByName(Widget);
     } // setupUi

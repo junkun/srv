@@ -4,7 +4,7 @@
 
 #include "widget.h"
 
-#include "iduiwidget.h"
+//#include "iduiwidget.h"
 #include <QMessageBox>
 #include <QMainWindow>
 #include <QSqlDatabase>

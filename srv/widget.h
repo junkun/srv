@@ -3,7 +3,7 @@
 #include <QMainWindow>
 #include <QWidget>
 #include <tvruiwidget.h>
-#include <iduiwidget.h>
+
 namespace Ui {
     class Widget;
 }
@@ -22,7 +22,7 @@ bool conectar();
 
 private:
     Ui::Widget *ui;
-    IdUiWidget *idruiw;
+    //IdUiWidget *idruiw;
 //    Ui::tvrWindow *tvruiw;
 
 private slots:
