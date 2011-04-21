@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tvr.ui'
 **
-** Created: Thu Apr 21 01:50:03 2011
+** Created: Thu Apr 21 14:50:37 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -41,6 +41,7 @@ public:
     QAction *actionStop;
     QAction *actionAbout;
     QAction *actionVolume;
+    QAction *actionAbout_TT;
     QWidget *centralwidget;
     QFrame *recordingInformationLabel;
     QLabel *label;
@@ -55,7 +56,7 @@ public:
     QMenuBar *menubar;
     QMenu *fileMenu;
     QMenu *menuControls;
-    QMenu *menuHelp;
+    QMenu *menuMenu;
     QStatusBar *statusbar;
     QToolBar *toolBar;
 
@@ -64,9 +65,9 @@ public:
         if (tvrWindow->objectName().isEmpty())
             tvrWindow->setObjectName(QString::fromUtf8("tvrWindow"));
         tvrWindow->setWindowModality(Qt::ApplicationModal);
-        tvrWindow->resize(340, 270);
+        tvrWindow->resize(610, 270);
         tvrWindow->setMinimumSize(QSize(340, 270));
-        tvrWindow->setMaximumSize(QSize(340, 270));
+        tvrWindow->setMaximumSize(QSize(680, 540));
         tvrWindow->setToolButtonStyle(Qt::ToolButtonIconOnly);
         actionNew = new QAction(tvrWindow);
         actionNew->setObjectName(QString::fromUtf8("actionNew"));
@@ -120,6 +121,8 @@ public:
         QIcon icon9;
         icon9.addFile(QString::fromUtf8(":/images/audio-volume-high.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionVolume->setIcon(icon9);
+        actionAbout_TT = new QAction(tvrWindow);
+        actionAbout_TT->setObjectName(QString::fromUtf8("actionAbout_TT"));
         centralwidget = new QWidget(tvrWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         recordingInformationLabel = new QFrame(centralwidget);
@@ -170,13 +173,13 @@ public:
         tvrWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(tvrWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 340, 25));
+        menubar->setGeometry(QRect(0, 0, 610, 25));
         fileMenu = new QMenu(menubar);
         fileMenu->setObjectName(QString::fromUtf8("fileMenu"));
         menuControls = new QMenu(menubar);
         menuControls->setObjectName(QString::fromUtf8("menuControls"));
-        menuHelp = new QMenu(menubar);
-        menuHelp->setObjectName(QString::fromUtf8("menuHelp"));
+        menuMenu = new QMenu(menubar);
+        menuMenu->setObjectName(QString::fromUtf8("menuMenu"));
         tvrWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(tvrWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -188,7 +191,7 @@ public:
 
         menubar->addAction(fileMenu->menuAction());
         menubar->addAction(menuControls->menuAction());
-        menubar->addAction(menuHelp->menuAction());
+        menubar->addAction(menuMenu->menuAction());
         fileMenu->addSeparator();
         fileMenu->addAction(actionNew);
         fileMenu->addAction(actionOpen);
@@ -201,7 +204,7 @@ public:
         menuControls->addAction(actionPaused);
         menuControls->addAction(actionPlay);
         menuControls->addAction(actionStop);
-        menuHelp->addAction(actionAbout);
+        menuMenu->addAction(actionAbout_TT);
         toolBar->addAction(actionRecord);
         toolBar->addSeparator();
         toolBar->addAction(actionPaused);
@@ -219,13 +222,9 @@ public:
     {
         tvrWindow->setWindowTitle(QApplication::translate("tvrWindow", "Tvr", 0, QApplication::UnicodeUTF8));
         actionNew->setText(QApplication::translate("tvrWindow", "&New", 0, QApplication::UnicodeUTF8));
-        actionNew->setShortcut(QApplication::translate("tvrWindow", "Ctrl+N", 0, QApplication::UnicodeUTF8));
         actionOpen->setText(QApplication::translate("tvrWindow", "&Open", 0, QApplication::UnicodeUTF8));
-        actionOpen->setShortcut(QApplication::translate("tvrWindow", "Ctrl+O", 0, QApplication::UnicodeUTF8));
         actionSave->setText(QApplication::translate("tvrWindow", "&Save", 0, QApplication::UnicodeUTF8));
-        actionSave->setShortcut(QApplication::translate("tvrWindow", "Ctrl+S", 0, QApplication::UnicodeUTF8));
         actionSaveAs->setText(QApplication::translate("tvrWindow", "&Save As ...", 0, QApplication::UnicodeUTF8));
-        actionSaveAs->setShortcut(QApplication::translate("tvrWindow", "Ctrl+Shift+S", 0, QApplication::UnicodeUTF8));
         actionExit->setText(QApplication::translate("tvrWindow", "&Exit", 0, QApplication::UnicodeUTF8));
         actionExit->setShortcut(QApplication::translate("tvrWindow", "Ctrl+Q", 0, QApplication::UnicodeUTF8));
         actionRecord->setText(QApplication::translate("tvrWindow", "&Record", 0, QApplication::UnicodeUTF8));
@@ -238,7 +237,7 @@ public:
         actionStop->setShortcut(QApplication::translate("tvrWindow", "Ctrl+S", 0, QApplication::UnicodeUTF8));
         actionAbout->setText(QApplication::translate("tvrWindow", "&About", 0, QApplication::UnicodeUTF8));
         actionVolume->setText(QApplication::translate("tvrWindow", "Open &Volume Control", 0, QApplication::UnicodeUTF8));
-        actionVolume->setShortcut(QApplication::translate("tvrWindow", "Ctrl+V", 0, QApplication::UnicodeUTF8));
+        actionAbout_TT->setText(QApplication::translate("tvrWindow", "About TT", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("tvrWindow", "File Information", 0, QApplication::UnicodeUTF8));
         fileNameLabel->setText(QApplication::translate("tvrWindow", "File Name:", 0, QApplication::UnicodeUTF8));
         fileNameEditLabel->setText(QString());
@@ -249,7 +248,7 @@ public:
         statusLabelEdit->setText(QApplication::translate("tvrWindow", "None", 0, QApplication::UnicodeUTF8));
         fileMenu->setTitle(QApplication::translate("tvrWindow", "&File", 0, QApplication::UnicodeUTF8));
         menuControls->setTitle(QApplication::translate("tvrWindow", "&Controls", 0, QApplication::UnicodeUTF8));
-        menuHelp->setTitle(QApplication::translate("tvrWindow", "&Help", 0, QApplication::UnicodeUTF8));
+        menuMenu->setTitle(QApplication::translate("tvrWindow", "Menu", 0, QApplication::UnicodeUTF8));
         toolBar->setWindowTitle(QString());
     } // retranslateUi
 

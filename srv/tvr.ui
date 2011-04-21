@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>340</width>
+    <width>610</width>
     <height>270</height>
    </rect>
   </property>
@@ -21,8 +21,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>340</width>
-    <height>270</height>
+    <width>680</width>
+    <height>540</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -189,7 +189,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>340</width>
+     <width>610</width>
      <height>25</height>
     </rect>
    </property>
@@ -215,15 +215,15 @@
     <addaction name="actionPlay"/>
     <addaction name="actionStop"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
+   <widget class="QMenu" name="menuMenu">
     <property name="title">
-     <string>&amp;Help</string>
+     <string>Menu</string>
     </property>
-    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_TT"/>
    </widget>
    <addaction name="fileMenu"/>
    <addaction name="menuControls"/>
-   <addaction name="menuHelp"/>
+   <addaction name="menuMenu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -255,9 +255,6 @@
    <property name="text">
     <string>&amp;New</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+N</string>
-   </property>
   </action>
   <action name="actionOpen">
    <property name="icon">
@@ -266,9 +263,6 @@
    </property>
    <property name="text">
     <string>&amp;Open</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionSave">
@@ -279,9 +273,6 @@
    <property name="text">
     <string>&amp;Save</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+S</string>
-   </property>
   </action>
   <action name="actionSaveAs">
    <property name="icon">
@@ -290,9 +281,6 @@
    </property>
    <property name="text">
     <string>&amp;Save As ...</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="actionExit">
@@ -368,8 +356,10 @@
    <property name="text">
     <string>Open &amp;Volume Control</string>
    </property>
-   <property name="shortcut">
-    <string>Ctrl+V</string>
+  </action>
+  <action name="actionAbout_TT">
+   <property name="text">
+    <string>About TT</string>
    </property>
   </action>
  </widget>

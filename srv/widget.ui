@@ -17,13 +17,13 @@
    <iconset>
     <normaloff>../../practica-build-desktop/images/lip_analysis_icon.png</normaloff>../../practica-build-desktop/images/lip_analysis_icon.png</iconset>
   </property>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="manageButton">
    <property name="geometry">
     <rect>
      <x>200</x>
      <y>250</y>
-     <width>162</width>
-     <height>58</height>
+     <width>129</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
@@ -40,21 +40,21 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="trainingButton">
    <property name="geometry">
     <rect>
      <x>460</x>
      <y>250</y>
-     <width>162</width>
-     <height>58</height>
+     <width>146</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>Entrenar red</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/1300738264_Network.png</normaloff>../../practica-build-desktop/images/1300738264_Network.png</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/1300738264_Network.png</normaloff>:/mainIcons/images/1300738264_Network.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -86,18 +86,18 @@
   <widget class="QPushButton" name="close">
    <property name="geometry">
     <rect>
-     <x>770</x>
-     <y>70</y>
-     <width>162</width>
-     <height>58</height>
+     <x>780</x>
+     <y>30</y>
+     <width>93</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>Salir</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/desktop.png</normaloff>../../practica-build-desktop/images/desktop.png</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/desktop.png</normaloff>:/mainIcons/images/desktop.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -111,16 +111,16 @@
     <rect>
      <x>30</x>
      <y>250</y>
-     <width>162</width>
-     <height>58</height>
+     <width>138</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>Reproducir</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/music.png</normaloff>../../practica-build-desktop/images/music.png</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/music.png</normaloff>:/mainIcons/images/music.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -149,21 +149,21 @@
     <string>Gestión de datos</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="reportButton">
    <property name="geometry">
     <rect>
      <x>410</x>
      <y>420</y>
-     <width>162</width>
-     <height>58</height>
+     <width>172</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>Generar reporte</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/todos.png</normaloff>../../practica-build-desktop/images/todos.png</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/todos.png</normaloff>:/mainIcons/images/todos.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -172,21 +172,21 @@
     </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="identifyButton">
    <property name="geometry">
     <rect>
      <x>630</x>
      <y>250</y>
-     <width>162</width>
-     <height>58</height>
+     <width>133</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>Identificar</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/home.png</normaloff>../../practica-build-desktop/images/home.png</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/home.png</normaloff>:/mainIcons/images/home.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -200,16 +200,16 @@
     <rect>
      <x>330</x>
      <y>70</y>
-     <width>162</width>
-     <height>58</height>
+     <width>136</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>Grabar voz</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/microphone-icon (1).jpg</normaloff>../../practica-build-desktop/images/microphone-icon (1).jpg</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/microphone-icon.jpg</normaloff>:/mainIcons/images/microphone-icon.jpg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -223,8 +223,8 @@
     <rect>
      <x>240</x>
      <y>420</y>
-     <width>162</width>
-     <height>58</height>
+     <width>159</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="baseSize">
@@ -243,8 +243,8 @@
     <string>Corpus de Voz</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>../../practica-build-desktop/images/group.png</normaloff>../../practica-build-desktop/images/group.png</iconset>
+    <iconset resource="resources/tvr-res.qrc">
+     <normaloff>:/mainIcons/images/group.png</normaloff>:/mainIcons/images/group.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -275,7 +275,9 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources/tvr-res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>close</sender>
@@ -284,8 +286,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>842</x>
-     <y>94</y>
+     <x>852</x>
+     <y>54</y>
     </hint>
     <hint type="destinationlabel">
      <x>704</x>
@@ -325,9 +327,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>identifyButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>openIdentifier()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>810</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>conectar()</slot>
   <slot>openRecord()</slot>
+  <slot>abrir()</slot>
+  <slot>openIdentifier()</slot>
  </slots>
 </ui>

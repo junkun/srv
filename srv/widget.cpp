@@ -1,7 +1,10 @@
-#include "widget.h"
 #include "ui_widget.h"
-#include "widget.h"
+
 #include "ui_widget.h"
+
+#include "widget.h"
+
+#include "iduiwidget.h"
 #include <QMessageBox>
 #include <QMainWindow>
 #include <QSqlDatabase>
@@ -43,9 +46,10 @@ void relModel2()
   model->setRelation( 2, QSqlRelation( "persons", "persons_id", "id" ) );
   model->select();
 
- // model->setHeaderData( 0, Qt::Horizontal, QObject::tr("Param1") );
- // model->setHeaderData( 1, Qt::Horizontal, QObject::tr("First Name") );
- // model->setHeaderData( 2, Qt::Horizontal, QObject::tr("Last Name") );
+  //Just testing columns headers
+model->setHeaderData( 0, Qt::Horizontal, QObject::tr("Param1") );
+model->setHeaderData( 1, Qt::Horizontal, QObject::tr("First Name") );
+model->setHeaderData( 2, Qt::Horizontal, QObject::tr("Last Name") );
 
   QTableView *view = new QTableView();
   view->setModel( model );
@@ -93,12 +97,11 @@ bool Widget::conectar(){
     return true;
     }
 
-/*void Widget::openRecord()
-{
+void Widget::openIder(){
 
-tvruiw = new TvrUiWidget();
-tvruiw->menuControls;
-}*/
+
+}
+
 
 Widget::~Widget()
 {

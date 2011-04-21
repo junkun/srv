@@ -12,15 +12,18 @@ int main(int argc, char *argv[])
     QSplashScreen splash(pixmap);
     splash.show();
     a.processEvents();
-    sleep(5);
+    sleep(.1);
 
 a.setApplicationName("Sistema de Reconocimiento de Voz");
 //a.setQuitOnLastWindowClosed(true);
-    Widget w;
-    w.show();
-    gst_init(&argc, &argv);
-    TvrUiWidget tvr;
-    tvr.show();
+Widget w;
+w.show();
+//gst_init(&argc, &argv);
+
+    //TvrUiWidget tvr;
+     //tvr.show();
+
+
 //close splashin when
     splash.finish(&w);
 

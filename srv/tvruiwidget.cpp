@@ -257,7 +257,7 @@ void TvrUiWidget::showSaveFileDlg(){
 bool TvrUiWidget::showOpenFileDlg(){
 
         fileNameO = QFileDialog::getOpenFileName(this, tr("Open File"),
-                                                        "/home",
+                                                        "/home/jonathan/Qt_projects/srv/srv/db/corpus",
                                                         tr("Audio (*.wav *.mp3)"));
 
         if(fileNameO.isEmpty()){
@@ -271,10 +271,10 @@ return true;
 }
 
 bool TvrUiWidget::saveAsMedia(){
-
+    /*saveAsMedia is just cp the temp file tFile in the new location */
         fileName = QFileDialog::getSaveFileName(this,
                                                 "Save As",
-                                                "/home",
+                                                "/home/jonathan/Qt_projects/srv/srv/db/corpus",
                                                 "Sound Files (*.wav)");
 
         fileNameEditLabel->setText(getFileName(fileName));
@@ -302,7 +302,7 @@ bool TvrUiWidget::saveMedia(){
 
         fileName = QFileDialog::getSaveFileName(this,
                                                 "Save Recordings to",
-                                                "/home",
+                                                "/home/jonathan/Qt_projects/srv/srv/db/corpus",
                                                 "Sound Files (*.wav)");
 
         fileNameEditLabel->setText(getFileName(fileName));
@@ -449,6 +449,7 @@ void TvrUiWidget::on_actionOpen_triggered(){
 
 void TvrUiWidget::on_actionVolume_triggered(){
 
+        /*Open gnome-volume-control app */
         gchar *vol_control_path;
         GError *error = NULL;
         gint vol_control_path_idx = 0;
@@ -540,8 +541,8 @@ void TvrUiWidget::on_actionExit_triggered(){
 void TvrUiWidget::on_actionAbout_triggered(){
 
 
-        QMessageBox::information(this, "TVR",
-                                 "Tiny Voice Recorder \n\n Author: Shahzad Bangash \n\n Email: <shahzad.bangash@gmail.com> \n\n"
+        QMessageBox::information(this, "SRV",
+                                 "Sitema de Reconocimiento de Voz \n\n Author: TT-2010-0036\n\n"
                                  "First Beta Release \n 0.1 \n",
                                 QMessageBox::Ok);
 

@@ -1,9 +1,5 @@
 #include "player.h"
 
-/* More Debug information retreival can be 
- * implemented
- */
-
 
 struct _player_data_private{
 	GstBus *bus;
