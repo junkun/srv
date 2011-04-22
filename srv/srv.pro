@@ -19,17 +19,20 @@ SOURCES += main.cpp\
         widget.cpp \
     tvruiwidget.cpp \
     tvr-gst-src/player.c \
-    tvr-gst-src/recorder.c
+    tvr-gst-src/recorder.c \
+    idruiwidget.cpp
 
 target.path = /usr/bin
 
 HEADERS  += widget.h \
     tvruiwidget.h \
     tvr-gst-src/player.h \
-    tvr-gst-src/recorder.h
+    tvr-gst-src/recorder.h \
+    idruiwidget.h
 
 FORMS    += widget.ui \
-    tvr.ui
+    tvr.ui \
+    idr.ui
 
 QT          += sql      \
             phonon

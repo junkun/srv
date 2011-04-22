@@ -53,7 +53,7 @@
     <string>Entrenar red</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/1300738264_Network.png</normaloff>:/mainIcons/images/1300738264_Network.png</iconset>
    </property>
    <property name="iconSize">
@@ -96,7 +96,7 @@
     <string>Salir</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/desktop.png</normaloff>:/mainIcons/images/desktop.png</iconset>
    </property>
    <property name="iconSize">
@@ -119,7 +119,7 @@
     <string>Reproducir</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/music.png</normaloff>:/mainIcons/images/music.png</iconset>
    </property>
    <property name="iconSize">
@@ -162,7 +162,7 @@
     <string>Generar reporte</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/todos.png</normaloff>:/mainIcons/images/todos.png</iconset>
    </property>
    <property name="iconSize">
@@ -185,7 +185,7 @@
     <string>Identificar</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/home.png</normaloff>:/mainIcons/images/home.png</iconset>
    </property>
    <property name="iconSize">
@@ -208,7 +208,7 @@
     <string>Grabar voz</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/microphone-icon.jpg</normaloff>:/mainIcons/images/microphone-icon.jpg</iconset>
    </property>
    <property name="iconSize">
@@ -243,7 +243,7 @@
     <string>Corpus de Voz</string>
    </property>
    <property name="icon">
-    <iconset>
+    <iconset resource="resources/tvr-res.qrc">
      <normaloff>:/mainIcons/images/group.png</normaloff>:/mainIcons/images/group.png</iconset>
    </property>
    <property name="iconSize">
@@ -275,7 +275,9 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources/tvr-res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>close</sender>
@@ -290,22 +292,6 @@
     <hint type="destinationlabel">
      <x>704</x>
      <y>107</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>recorder</sender>
-   <signal>clicked()</signal>
-   <receiver>Widget</receiver>
-   <slot>openRecord()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>410</x>
-     <y>98</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>468</x>
-     <y>269</y>
     </hint>
    </hints>
   </connection>

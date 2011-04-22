@@ -26,8 +26,7 @@ private:
 //    Ui::tvrWindow *tvruiw;
 
 private slots:
-  //  void openRecord();
-    void openIder();
+      void openIder();
 
 
 };

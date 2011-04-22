@@ -18,10 +18,9 @@ a.setApplicationName("Sistema de Reconocimiento de Voz");
 //a.setQuitOnLastWindowClosed(true);
 Widget w;
 w.show();
-//gst_init(&argc, &argv);
-
-    //TvrUiWidget tvr;
-     //tvr.show();
+gst_init(&argc, &argv);
+TvrUiWidget tvr;
+tvr.show();
 
 
 //close splashin when

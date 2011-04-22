@@ -1,7 +1,7 @@
 #include "ui_widget.h"
 
 #include "ui_widget.h"
-
+#include "tvruiwidget.h"
 #include "widget.h"
 
 //#include "iduiwidget.h"
@@ -98,7 +98,10 @@ bool Widget::conectar(){
     }
 
 void Widget::openIder(){
+    //gst_init(&argc, &argv);
 
+        TvrUiWidget tvruiw;
+         tvruiw.show();
 
 }
 
