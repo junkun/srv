@@ -97,13 +97,8 @@ bool Widget::conectar(){
     return true;
     }
 
-void Widget::openIder(){
-    //gst_init(&argc, &argv);
 
-        TvrUiWidget tvruiw;
-         tvruiw.show();
 
-}
 
 
 Widget::~Widget()

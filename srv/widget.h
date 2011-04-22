@@ -18,6 +18,7 @@ public:
 
 public slots:
 bool conectar();
+void openIder();
 
 
 private:

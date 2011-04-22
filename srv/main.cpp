@@ -21,8 +21,6 @@ w.show();
 gst_init(&argc, &argv);
 TvrUiWidget tvr;
 tvr.show();
-
-
 //close splashin when
     splash.finish(&w);
 
